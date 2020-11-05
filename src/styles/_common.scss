@@ -1,0 +1,55 @@
+@import '_fonts';
+@import '_colors';
+
+.loans-focus {
+    box-shadow: 0 0 0 3px $seb-highlight;
+    outline: 0;
+}
+
+.loans-label {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: block;
+    @include font-size(1);
+    @include sebfont-medium;
+    &-small {
+        @include font-size(0.875);
+        @include sebfont-regular;
+    }
+
+    &.dark {
+        color: $seb-grey-1;
+    }
+}
+
+.loans-label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+@mixin input {
+    @include font-size(1);
+    @include sebfont-regular;
+    // Firefox borders fixes
+    -webkit-box-shadow: none;
+    border: 0;
+    color: $seb-grey-9;
+    &::-ms-clear {
+        display: none;
+    }
+}
+
+.column {
+    width: 75px;
+    @include sebfont-regular;
+    display: inline-block;
+
+    @media only screen and (max-width: 767.98px) {
+        margin-top: 2rem;
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 2rem;
+    }
+}
