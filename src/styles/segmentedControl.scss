@@ -1,0 +1,111 @@
+@import '_fonts';
+
+.segmentedControl {
+    > div {
+        display: inline-block;
+        width: 160px;
+    }
+    &.hover {
+        > button:first-of-type {
+            color: white;
+            background-color: $seb-blue;
+        }
+    }
+    &.focus {
+        > button:first-of-type {
+            border-color: $seb-blue-darker;
+            box-shadow: 0 0 4px 1px $seb-blue;
+            outline: none;
+            z-index: 1;
+        }
+    }
+    &.select {
+        > button:first-of-type {
+            color: white;
+            background-color: $seb-blue-darker;
+            cursor: default;
+        }
+    }
+    &.disabled {
+        > button:first-of-type {
+            background-color: $seb-grey-1;
+            cursor: default;
+        }
+    }
+    &.new {
+        > button {
+            color: $seb-grey-8;
+            border-color: $seb-grey-8;
+            @include sebfont-regular;
+            &:hover {
+                background-color: $seb-grey-7;
+            }
+            &:active {
+                background-color: $seb-grey-8;
+            }
+            &.selected {
+                background-color: $seb-grey-8;
+            }
+        }
+        &.hover {
+            > button:first-of-type {
+                background-color: $seb-grey-7;
+            }
+        }
+        &.select {
+            > button:first-of-type {
+                background-color: $seb-grey-8;
+            }
+        }
+        &.disabled {
+            > button:first-of-type {
+                color: $seb-grey-3;
+                background-color: $seb-grey-2;
+            }
+        }
+    }
+    > button {
+        position: relative;
+        width: 143px;
+        height: 44px;
+        color: $seb-blue-dark;
+        background-color: white;
+        border-style: solid;
+        border-color: $seb-blue-dark;
+        border-width: 1px;
+        margin-left: -1px;
+        cursor: pointer;
+        @include sebfont-medium;
+
+        &:hover {
+            color: white;
+            background-color: $seb-blue;
+        }
+        &:focus {
+            border-color: $seb-blue-darker;
+            box-shadow: 0 0 4px 1px $seb-blue;
+            outline: none;
+            z-index: 1;
+        }
+        &:active {
+            color: white;
+            background-color: $seb-blue-darker;
+        }
+        &.selected {
+            color: white;
+            background-color: $seb-blue-darker;
+            cursor: default;
+        }
+        &.disabled {
+            background-color: $seb-grey-1;
+            cursor: default;
+        }
+        &:first-of-type {
+            border-radius: 4px 0 0 4px;
+            margin-left: 0;
+        }
+        &:last-of-type {
+            border-radius: 0 4px 4px 0;
+        }
+    }
+}
