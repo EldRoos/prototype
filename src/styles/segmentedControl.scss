@@ -28,6 +28,8 @@
     }
     &.disabled {
         > button:first-of-type {
+            //color: $seb-grey-3;
+            color: $seb-blue-dark;
             background-color: $seb-grey-1;
             cursor: default;
         }
