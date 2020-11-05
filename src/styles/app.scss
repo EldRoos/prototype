@@ -1,0 +1,51 @@
+@import '_fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+    @include sebfont-normal;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+h1 {
+    @include sebfont-combo(400, 2, 2.5);
+}
+
+h2 {
+    @include sebfont-combo(300, 1.5, 2);
+}
+
+h3 {
+    @include sebfont-combo(400, 1.5, 2);
+}
+
+.app {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 1800px;
+    height: 1150px;
+    margin: auto;
+    margin-top: 48px;
+    padding-top: 48px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.top {
+    width: 100%;
+}
+
+.side {
+    flex-grow: 1;
+    height: calc(1150px - 150px);
+    text-align: left;
+    margin-left: 64px;
+    margin-right: 64px;
+}
