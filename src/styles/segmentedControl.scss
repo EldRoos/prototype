@@ -42,6 +42,8 @@
             &:hover {
                 background-color: $seb-grey-7;
                 box-shadow: 0 0 2px 0 $seb-grey-7;
+                border-color: $seb-grey-7;
+                z-index: 2;
             }
             &:active {
                 background-color: $seb-grey-8;
@@ -54,6 +56,8 @@
             > button:first-of-type {
                 background-color: $seb-grey-7;
                 box-shadow: 0 0 2px 0 $seb-grey-7;
+                border-color: $seb-grey-7;
+                z-index: 2;
             }
         }
         &.select {
