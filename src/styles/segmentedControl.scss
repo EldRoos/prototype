@@ -19,7 +19,7 @@
             z-index: 1;
         }
     }
-    &.select {
+    &.selected {
         > button:first-of-type {
             color: white;
             background-color: $seb-blue-darker;
@@ -28,7 +28,6 @@
     }
     &.disabled {
         > button:first-of-type {
-            //color: $seb-grey-3;
             color: $seb-blue-dark;
             background-color: $seb-grey-1;
             cursor: default;
@@ -60,7 +59,7 @@
                 z-index: 2;
             }
         }
-        &.select {
+        &.selected {
             > button:first-of-type {
                 background-color: $seb-grey-8;
             }
@@ -69,6 +68,8 @@
             > button:first-of-type {
                 color: $seb-grey-3;
                 background-color: $seb-grey-2;
+                border-color: $seb-grey-8;
+                box-shadow: none;
             }
         }
     }

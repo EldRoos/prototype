@@ -24,21 +24,21 @@ function App() {
                         styleClass="hover focus"
                     />
                     <br />
-                    <SegmentedControl title="Select" styleClass="select" />
+                    <SegmentedControl title="Select" styleClass="selected" />
                     <br />
                     <SegmentedControl
                         title="Hover Select"
-                        styleClass="hover select"
+                        styleClass="hover selected"
                     />
                     <br />
                     <SegmentedControl
                         title="Focus Select"
-                        styleClass="focus select"
+                        styleClass="focus selected"
                     />
                     <br />
                     <SegmentedControl
                         title="Hover Focus Select"
-                        styleClass="hover focus select"
+                        styleClass="hover focus selected"
                     />
                     <br />
                     <SegmentedControl title="Disable" styleClass="disabled" />
@@ -59,21 +59,24 @@ function App() {
                         styleClass="new hover focus"
                     />
                     <br />
-                    <SegmentedControl title="Select" styleClass="new select" />
+                    <SegmentedControl
+                        title="Select"
+                        styleClass="new selected"
+                    />
                     <br />
                     <SegmentedControl
                         title="Hover Select"
-                        styleClass="new hover select"
+                        styleClass="new hover selected"
                     />
                     <br />
                     <SegmentedControl
                         title="Focus Select"
-                        styleClass="new focus select"
+                        styleClass="new focus selected"
                     />
                     <br />
                     <SegmentedControl
                         title="Hover Focus Select"
-                        styleClass="new hover focus select"
+                        styleClass="new hover focus selected"
                     />
                     <br />
                     <SegmentedControl
