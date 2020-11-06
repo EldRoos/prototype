@@ -41,6 +41,7 @@
             @include sebfont-regular;
             &:hover {
                 background-color: $seb-grey-7;
+                box-shadow: 0 0 2px 0 $seb-grey-7;
             }
             &:active {
                 background-color: $seb-grey-8;
@@ -52,6 +53,7 @@
         &.hover {
             > button:first-of-type {
                 background-color: $seb-grey-7;
+                box-shadow: 0 0 2px 0 $seb-grey-7;
             }
         }
         &.select {
