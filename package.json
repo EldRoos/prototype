@@ -2,7 +2,6 @@
     "name": "prototype",
     "version": "0.1.0",
     "description": "Prototyping page for CX Prototypers",
-    "author": "leopold.roos@seb.se",
     "private": true,
     "homepage": "https://eldroos.github.io/prototype/",
     "scripts": {
