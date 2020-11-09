@@ -22,6 +22,11 @@ h3 {
     @include sebfont-combo(400, 1.5, 2);
 }
 
+input[type='radio'] {
+    margin-left: 8px;
+    margin-right: 2px;
+}
+
 .app {
     text-align: center;
 }
@@ -34,9 +39,17 @@ h3 {
     width: 1350px;
     height: 1150px;
     margin: auto;
-    margin-top: 48px;
+    margin-top: 32px;
     padding-top: 48px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.grey {
+    background-color: $seb-grey-2;
+}
+
+.black {
+    background-color: $seb-grey-9;
 }
 
 .top {
@@ -47,6 +60,9 @@ h3 {
     flex-grow: 1;
     height: calc(1150px - 150px);
     text-align: left;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }

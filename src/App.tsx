@@ -1,14 +1,49 @@
+import React, { useState } from 'react';
 import './styles/app.scss';
 import { SegmentedControl } from './SegmentedControl';
 
 function App() {
+    const [background, setBackground] = useState<string>('white');
+
+    const changeBackground = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setBackground(event.target.value);
+    };
+
     return (
         <div className="app">
             <div className="card">
                 <div className="top">
                     <h1>Prototype</h1>
+                    <div>
+                        <label>Background:</label>
+                        <input
+                            type="radio"
+                            id="white"
+                            name="background"
+                            value="white"
+                            onChange={changeBackground}
+                            defaultChecked
+                        />
+                        <label htmlFor="white">White</label>
+                        <input
+                            type="radio"
+                            id="grey"
+                            name="background"
+                            value="grey"
+                            onChange={changeBackground}
+                        />
+                        <label htmlFor="grey">Grey</label>
+                        <input
+                            type="radio"
+                            id="black"
+                            name="background"
+                            value="black"
+                            onChange={changeBackground}
+                        />
+                        <label htmlFor="black">Black</label>
+                    </div>
                 </div>
-                <div className="side">
+                <div className={'side ' + background}>
                     <h2>TODAY</h2>
                     <br />
                     <h3>Segmented Control</h3>
@@ -43,7 +78,7 @@ function App() {
                     <br />
                     <SegmentedControl title="Disable" styleClass="disabled" />
                 </div>
-                <div className="side">
+                <div className={'side ' + background}>
                     <h2>TOMORROW</h2>
                     <br />
                     <h3>Segmented Control</h3>
